@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CapaConexion.Modelos
+namespace Capa_Conexion.Modelos
 {
     internal class customers
     {

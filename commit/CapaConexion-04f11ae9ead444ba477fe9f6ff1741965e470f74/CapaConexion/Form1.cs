@@ -23,7 +23,7 @@ namespace CapaConexion
         private void btnCargar_Click(object sender, EventArgs e)
         {
             SqlConnection conexion = new SqlConnection
-                ("Data Source=ASUS_TUF_JEREMY\\SQLEXPRESS;Initial Catalog=Northwind;Integrated Security=True;Connect Timeout=30;Encrypt=False;");
+                ("Data Source=DESKTOP-L4680KA\\SQLEXPRESS;Initial Catalog=Northwind;Integrated Security=True;Connect Timeout=30;Encrypt=False;");
             MessageBox.Show("Conexion creada");
             conexion.Open();
 
@@ -78,6 +78,11 @@ namespace CapaConexion
         {
             var filtro = Customers.FindAll(x => x.CompanyName.StartsWith(tbFiltro.Text));
             dataGrid.DataSource = filtro;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            string cadenaConexion = DatosLayer.DataBase.ConnectionString;
         }
     }
 }
