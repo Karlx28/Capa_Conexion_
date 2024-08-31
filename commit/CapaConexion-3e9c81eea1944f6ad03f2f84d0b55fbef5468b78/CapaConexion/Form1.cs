@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using Capa_Conexion.Modelos;
+using CapaConexion.Modelos;
 
 namespace CapaConexion
 {
@@ -23,7 +23,7 @@ namespace CapaConexion
         private void btnCargar_Click(object sender, EventArgs e)
         {
             SqlConnection conexion = new SqlConnection
-                ("Data Source=DESKTOP-L4680KA\\SQLEXPRESS;Initial Catalog=Northwind;Integrated Security=True;Connect Timeout=30;Encrypt=False;");
+                ("Data Source=ASUS_TUF_JEREMY\\SQLEXPRESS;Initial Catalog=Northwind;Integrated Security=True;Connect Timeout=30;Encrypt=False;");
             MessageBox.Show("Conexion creada");
             conexion.Open();
 
