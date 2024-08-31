@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 
 namespace DatosLayer
 {
-    public class DataBase
+    public class Database
     {
 
         public static int ConnetionTimeout { get; set; }
