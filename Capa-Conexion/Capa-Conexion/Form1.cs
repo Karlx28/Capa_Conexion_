@@ -20,7 +20,13 @@ namespace Capa_Conexion
 
         private void btnCargar_Click(object sender, EventArgs e)
         {
-
+            SqlConnection conexion =
+        new SqlConnection
+        ("Data Source=DESKTOP-L4680KA\\SQLEXPRESS;Initial Catalog=Northwind;Integrated Security=True;");
+            conexion.Open();
+            MessageBox.Show("Conectado");
+            conexion.Close();
+            MessageBox.Show("Gracias, Conexion finalizada");
         }
     }
 }
